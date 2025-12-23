@@ -1,0 +1,31 @@
+{
+  "name": "geo-data",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@config/eslint": "^1.0.0",
+    "@types/axios": "^0.9.36",
+    "@types/jest": "^30.0.0",
+    "@types/unzipper": "^0.10.11",
+    "eslint": "^9.39.2",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "dev": "tsup --watch --onSuccess \"node dist/index.cjs\"",
+    "build": "tsup",
+    "lint": "eslint src/ --max-warnings 0",
+    "test": "jest --detectOpenHandles",
+    "test:cov": "jest --detectOpenHandles --coverage",
+    "tscheck": "npx tsc -p tsconfig.json --maxNodeModuleJsDepth 0"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "readline": "^1.3.0",
+    "unzipper": "^0.12.3"
+  }
+}

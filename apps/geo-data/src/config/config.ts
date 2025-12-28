@@ -438,37 +438,37 @@ export const STATIC_FILES = [ 'COUNTRIES' ]
 // Country city / postcodes to download
 // export const COUNTRY_FILES = [ 'GB' ]
 export const COUNTRY_FILES = [ 
-   'AT',   // Austria
-   'BE',   // Belgium
+//    'AT',   // Austria
+//    'BE',   // Belgium
 
-   'BG',   // Bulgaria
-   'CY',   // Cyprus
-   'CZ',   // Czechia
-   'DE',   // Germany
-   'DK',   // Denmark
-   'EE',   // Estonia
-   'ES',   // Spain
-   'FI',   // Finland
+//    'BG',   // Bulgaria
+//    'CY',   // Cyprus
+//    'CZ',   // Czechia
+//    'DE',   // Germany
+//    'DK',   // Denmark
+//    'EE',   // Estonia
+//    'ES',   // Spain
+//    'FI',   // Finland
 
-   'FR',   // France
-   'GB',   // Great Britain
-   'GR',   // Greece
-   'HR',   // Croatia
-   'HU',   // Hungary
-   'IE',   // Ireland
-   'IT',   // Italy
-   'LT',   // Lithuania
-   'LV',   // Latvia
-   'LU',   // Luxembourg
-   'MT',   // Malta
-   'NL',   // Netherlands
-   'PL',   // Poland
-   'PT',   // Portugal
-   'RO',   // Romania
-   'SK',   // Slovakia
-   'SI',   // Slovenia
-   'SE',   // Sweden
-   'US'    // USA
+//    'FR',   // France
+//   'GB',   // Great Britain
+//    'GR',   // Greece
+//    'HR',   // Croatia
+//    'HU',   // Hungary
+//    'IE',   // Ireland
+//    'IT',   // Italy
+//    'LT',   // Lithuania
+//    'LV',   // Latvia
+    'LU',   // Luxembourg
+//    'MT',   // Malta
+//    'NL',   // Netherlands
+//    'PL',   // Poland
+//    'PT',   // Portugal
+//    'RO',   // Romania
+//    'SK',   // Slovakia
+//    'SI',   // Slovenia
+//    'SE',   // Sweden
+//    'US'    // USA
 ]
 // export const COUNTRY_FILES = [ 
 //     'AT',   // Austria

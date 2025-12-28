@@ -18,6 +18,7 @@
   "scripts": {
     "dev": "tsup --watch --onSuccess \"node dist/index.cjs\"",
     "build": "tsup",
+    "start": "node dist/index.cjs",
     "lint": "eslint src/ --max-warnings 0",
     "test": "jest --detectOpenHandles",
     "test:cov": "jest --detectOpenHandles --coverage",
@@ -25,6 +26,7 @@
   },
   "dependencies": {
     "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
     "readline": "^1.3.0",
     "unzipper": "^0.12.3"
   }

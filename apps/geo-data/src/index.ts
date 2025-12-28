@@ -5,6 +5,10 @@ import { exportStaticFiles } from './export-data/export-static-files'
 import { processCityPostcodeFiles } from './geonames/process-city-postcode-files'
 import { StaticData } from './types/static-data.js'
 import { exportCommandFile } from './export-data/export-commands.js'
+import 'dotenv/config'
+import { readInEnvVariables } from 'config/read-in-env-variables'
+import { copyFilesForDatabaseLoad } from 'directories/copy-files-for-database-load'
+import { exportLoadDateTime } from 'export-data/export-load-date-time'
 
 /**
  * 
@@ -18,6 +22,9 @@ const runGeoLoad = async() => {
     }
 
     try {
+
+        // Get the environment variables
+        const config = readInEnvVariables()
 
         // Cleanup the directories we will download the files into
         await cleanUpDirectories ()
@@ -34,7 +41,16 @@ const runGeoLoad = async() => {
         // Export the static files
         await exportStaticFiles (geoImport)
 
+        // Export the database commands to run to load data in
         await exportCommandFile ()
+
+        // Export the load date and time
+        await exportLoadDateTime ();
+
+        // Copy the files to qa place we can load into the database
+        if ( config.copyFiles === 'Y') {
+            await copyFilesForDatabaseLoad (config)
+        }
 
         console.log ( 'Load data' )
 

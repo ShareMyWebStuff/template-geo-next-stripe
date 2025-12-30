@@ -451,7 +451,7 @@ export const COUNTRY_FILES = [
 //    'FI',   // Finland
 
 //    'FR',   // France
-      'GB',   // Great Britain
+//   'GB',   // Great Britain
 //    'GR',   // Greece
 //    'HR',   // Croatia
 //    'HU',   // Hungary
@@ -459,7 +459,7 @@ export const COUNTRY_FILES = [
 //    'IT',   // Italy
 //    'LT',   // Lithuania
 //    'LV',   // Latvia
-//    'LU',   // Luxembourg
+    'LU',   // Luxembourg
 //    'MT',   // Malta
 //    'NL',   // Netherlands
 //    'PL',   // Poland

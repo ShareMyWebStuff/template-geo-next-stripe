@@ -1,0 +1,17 @@
+-- Database deploy script
+
+-- DeployId|Insert Description|Insert Script|Insert Rows Affected|Uninstall Description|Uninstall Script|Uninstall Rows Affected|Data Filename for bulk loading|Mode
+
+-- Unique Id| Type       | Name                             | Action                 | Uninstall | Install | Rollback Action
+1           | procedures | index_create                     | 00001-create_procedure |           | Y       |
+2           | procedures | index_delete                     | 00001-create_procedure |           | Y       |
+
+10          | tables     | import_cities                    | 00001-create_table     |           | Y       |
+11          | tables     | import_city_differences          | 00001-create_table     |           | Y       |
+12          | tables     | import_countries                 | 00001-create_table     |           | Y       |
+13          | tables     | import_partials                  | 00001-create_table     |           | Y       |
+14          | tables     | import_postcodes                 | 00001-create_table     |           | Y       |
+
+20          | tables     | geo_cities                       | 00001-create_table     |           | Y       |
+21          | tables     | geo_countries                    | 00001-create_table     |           | Y       |
+22          | tables     | geo_locations                    | 00001-create_table     |           | Y       |

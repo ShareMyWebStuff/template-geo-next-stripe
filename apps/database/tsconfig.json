@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+		"allowSyntheticDefaultImports": true,
+		"checkJs": true,
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"target": "esnext",
+		"module": "es2022",
+		"strict": true,
+    "outDir": "./dist",
+    "paths": {
+      "@/config/*": [ "src/config/*" ],
+      "@/types/*": ["src/types/*"],
+      "@/utils/*": ["src/utils/*"]
+    }
+  },
+  "include": ["./src/**/*.ts", "eslint.config.js"],
+  "exclude": ["./coverage", "./dist", "./data", "node_modules", "eslint.config.*"]
+}

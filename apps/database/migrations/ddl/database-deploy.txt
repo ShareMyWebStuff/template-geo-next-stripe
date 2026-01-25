@@ -15,3 +15,8 @@
 20          | tables     | geo_cities                       | 00001-create_table     |           | Y       |
 21          | tables     | geo_countries                    | 00001-create_table     |           | Y       |
 22          | tables     | geo_locations                    | 00001-create_table     |           | Y       |
+
+30          | tables     | better_auth_user                 | 00001-create_table     |           | Y       |
+31          | tables     | better_auth_session              | 00001-create_table     |           | Y       |
+32          | tables     | better_auth_account              | 00001-create_table     |           | Y       |
+33          | tables     | better_auth_verification         | 00001-create_table     |           | Y       |
